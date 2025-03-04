@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+
+}
+h2{
+    margin: 0px;
+}
+#tv {
+   width: 30px;
+}
+#pc {
+    width: 60px;
+}
+#vn ,#an{
+    width: 100px;
+}
+#plaats{
+    width: 175px;
+}
+#adres,#tel,#email{
+    width: 242px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 10px;
+    margin-left: 0px;
+    border: solid 1px black;
+    width: 400px;
+    border-radius: 2px;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+}
+.form-group label {
+    width: 140px;
+    margin-right: 5px;
+}
+input[type="text"] {
+    width: 200px;
+    padding: 2px;
+    margin: 1px 0;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+#error-message {
+    border: none; 
+    border-radius: 5px;
+    color: red;
+    padding: 5px; 
+}
+.groen {
+    color: green;
+}

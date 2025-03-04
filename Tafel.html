@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript For Loop</h2>
+<input id="tafel"></input>
+<button onclick="bereken()">geef de tafel</button>
+<p id="demo"></p>
+
+
+<script>
+function bereken() {
+  let text = "";
+  let getal=document.getElementById("tafel").value;
+  for (let i = 1; i <= 10; i++) {
+    text += i + " x " + getal + " = " + i*getal + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+.foto{
+    background-image: url(images/stop.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+}
+#display{
+    margin-top: 87px;
+    margin-left: 40px;
+    height: 75px;
+    background-color: rgb(102, 104, 112);
+    width: 165px;
+    border: 7px dashed  chartreuse ;
+    color: black;
+    padding-left: 45px;
+    padding-top: 40px;
+    font-size: xx-large;
+    border-radius: 10px;
+}
+.buttonstart{
+    background: transparent;
+    border: none ;
+    font-size:0;
+    margin-top: 5px;
+    margin-left: 3px;
+    height: 45px;
+    width: 53px;
+}
+.buttonreset{
+    background: transparent;
+    border: none ;
+    font-size:0;
+    margin-left: 65px;
+    width: 50px;
+    height: 50px;   
+}
+.buttonligth{
+    background: transparent;
+    border: none ;
+    font-size:0;
+    margin-top: 5px;
+    margin-left: 3px;
+    height: 45px;
+    width: 53px;
+}

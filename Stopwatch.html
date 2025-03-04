@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="Stopwatch.css">
+</head>
+<body>
+   
+    <h2>Stopwatch</h2>
+    <div class="foto">
+    <div id="display"></div>
+    <button class="buttonreset" onclick="freset()">reset</button>
+    <button class="buttonstart" onclick="fstart()">start</button>
+    <button class="buttonligth" onclick="flight()">light</button>
+
+
+</div>
+
+    <script>
+        let sec = 0;
+        let m = 0;
+        let ms = 0;
+        let mijnInterval;
+        let start = true;
+        function fstart() {
+            if (start) {
+                mijnInterval = setInterval(secTeller, 10);
+                start=false;
+            } else {
+            clearInterval(mijnInterval);
+            start = true;
+            }}
+            function flight(){
+                    
+                document.getElementById("display").style.background = "white";
+                setTimeout(() => {
+                    document.getElementById("display").style.background  = "rgb(102, 104, 112)";
+                
+                },3000);
+                  
+            }
+        function secTeller() {
+            let output = "";
+            ms += 10;
+            if (ms >= 1000) {
+                ms = 0;
+                sec += 1;
+                if (sec >= 60) {
+                    sec = 0;
+                    m += 1;}
+            }
+            if (m <10){
+                output += "0"
+            }
+            output += m + ":";
+            if (sec < 10){
+                output += "0"
+            }
+            output += sec + ":" + ms.toString().slice(0,2);
+            document.getElementById("display").innerHTML = output;
+        }
+        function freset(){
+            ms = 0;
+            m = 0;
+            sec = 0;
+            document.getElementById("display").innerHTML = m + "0:0" + sec + ":0" + ms + "";
+        }
+       
+    </script>
+</body>
+
+</html>

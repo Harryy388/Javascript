@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto's Weergeven</title>
+    <style>
+        .photo {
+            display: none;
+            width: 300px; /* Pas de grootte van de afbeeldingen aan */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="showImage(1)">Hond</button>
+    <button onclick="showImage(2)">hert</button>
+    <button onclick="showImage(3)">Koe</button>
+    <button onclick="showImage(4)">Schaap</button>
+
+    <img id="image1" class="photo" src="images/Hond.jpg" >
+    <img id="image2" class="photo" src="images/Hert.jpg" >
+    <img id="image3" class="photo" src="images/Koe.jpg" >
+    <img id="image4" class="photo" src="images/Schaap.jpg" >
+
+    <script>
+        function showImage(imageNumber) {
+            var images = document.getElementsByClassName("photo");
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+        
+            }
+
+           
+            var image = document.getElementById("image" + imageNumber);
+            image.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
